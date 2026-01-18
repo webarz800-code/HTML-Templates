@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Tamplate</title>
+</head>
+
+<body>
+    <!-- Table Template included BEM (Block-Element-Modifier) -->
+
+    <main>
+        <section class="employee-table-tamplate">
+            <table class="table table-borderd" border="1">
+                <caption class="table caption">
+                    Employee Details
+                </caption>
+
+                <thead class="table-head">
+                    <tr class="table-row table-row__head">
+                        <th class="table-cell table-cell__head">ID</th>
+                        <th class="table-cell table-cell__head">Name</th>
+                        <th class="table-cell table-cell__head">Role</th>
+                        <th class="table-cell table-cell__head">Salary</th>
+                    </tr>
+                </thead>
+
+                <tbody class="table-body">
+                    <tr class="table-row">
+                        <td class="table-cell">1</td>
+                        <td class="table-cell">Arbaz</td>
+                        <td class="table-cell">Junior Software Developer</td>
+                        <td class="table-cell">20k</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Colspan-Table -->
+        <section class="fruits-table colspan">
+            <table class="table table-borderd" border="1">
+                <caption class="table-caption">
+                    Fruits Rate Details
+                </caption>
+
+                <thead class="table-head">
+                    <tr class="table-row table-row__head">
+                        <th class="table-cell table-cell__head">S.N</th>
+                        <th class="table-cell table-cell__head">Item</th>
+                        <th class="table-cell table-cell__head">Quantity</th>
+                        <th class="table-cell table-cell__head">Rate</th>
+                    </tr>
+                </thead>
+
+                <tbody class="table-body">
+                    <tr class="table-row">
+                        <td class="table-cell">1</td>
+                        <td class="table-cell">Apple</td>
+                        <td class="table-cell">5</td>
+                        <td class="table-cell">100</td>
+                    </tr>
+
+                    <tr class="table-row">
+                        <td class="table-cell">2</td>
+                        <td class="table-cell">Mango</td>
+                        <td class="table-cell">5</td>
+                        <td class="table-cell">200</td>
+                    </tr>
+
+                    <tr class="table-row">
+                        <td class="table-cell">3</td>
+                        <td class="table-cell">Orange</td>
+                        <td class="table-cell">5</td>
+                        <td class="table-cell">50</td>
+                    </tr>
+
+                    <tr class="table-row">
+                        <td class="table-cell">4</td>
+                        <td class="table-cell">Banana</td>
+                        <td class="table-cell">10</td>
+                        <td class="table-cell">100</td>
+                    </tr>
+                </tbody>
+
+                <tfoot class="table-foot">
+                    <tr class="table-row">
+                        <td class="table-cell" colspan="3">Total</td>
+                        <td class="table-cell">450</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Rowspan-Table -->      
+        <section class="student-table rowspan">
+            <table class="table-borderd" border="1">
+                <caption class="table-caption">
+                    Student Details
+                </caption>
+
+                <thead class="table-head">
+                    <tr class="table-row table-row__head">
+                        <th class="table-cell table-cell__head">Name</th>
+                        <th class="table-cell table-cell__head">Subject</th>
+                        <th class="table-cell table-cell__head">Marks</th>
+                    </tr>
+                </thead>
+
+                <tbody class="table-body">
+                    <tr class="table-row">
+                        <td class="table-cell" rowspan="3">John</td>
+                        <td class="table-cell">English</td>
+                        <td class="table-cell">80</td>
+                    </tr>
+
+                    <tr class="table-row">
+                        <td class="table-cell">Math</td>
+                        <td class="table-cell">70</td>
+                    </tr>
+
+                    <tr class="table-row">
+                        <td class="table-cell">Science</td>
+                        <td class="table-cell">70</td>
+                    </tr>
+                </tbody>
+
+                <tfoot class="table-foot">
+                     <tr class="table-row">
+                        <td class="table-cell" colspan="2">Total</td>
+                        <td class="table-cell">220</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
