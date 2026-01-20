@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-Template</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .form__group {
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Form Template Included BGM (Block-Element-Modifier) -->
+
+    <form action="" class="form">
+        <h2 class="form__heading">Create Account</h2>
+
+        <div class="form__group">
+            <label for="name" class="form__label">Name</label>
+            <input type="text" class="form__input" id="name" placeholder="Name" />
+        </div>
+
+        <div class="form__group">
+            <label for="fname" class="form__label">Full Name</label>
+            <input type="text" class="form__input" id="fname" placeholder="Full Name" />
+        </div>
+
+        <div class="form__group">
+            <label for="email" class="form__label">Email</label>
+            <input type="email" class="form__input" id="email" placeholder="Email" />
+        </div>
+
+        <div class="form__group">
+            <label for="num" class="form__label">Phone Number</label>
+            <input type="number" class="form__input" id="num" placeholder="Number" />
+        </div>
+
+        <div class="form__group">
+            <label for="pass" class="form__label">password</label>
+            <input type="password" class="form__input" id="pass" required />
+        </div>
+
+        <div class="form__group">
+            <label for="cpass" class="form__label">Confirm Password</label>
+            <input type="password" class="form__input" id="cpass" required />
+        </div>
+
+        <div class="form__group">
+            <label for="option" class="form__label">Select Option</label>
+            <select class="form__select" id="option">
+                <option>Select one</option>
+                <option>Student</option>
+                <option>Developer</option>
+                <option>Designer</option>
+            </select>
+        </div>
+
+        <div class="form__group">
+            <label for="" class="form__label">Experience Level</label>
+            <input type="range" class="form__range" min="0" max="10" />
+        </div>
+
+        <div class="form__group form__group--row">
+            <label for="" class="form__label"> I agree to terms & condition </label>
+            <input type="checkbox" class="form__checkbox" />
+        </div>
+
+        <div class="form__group">
+            <label for="" class="form__label"></label>
+            <textarea name="" id="" class="form__texrarea" placeholder="Write something..."></textarea>
+        </div>
+
+        <div class="form__actions">
+            <button class="form__button form__button--primary">Sign Up</button>
+            <button class="form__button form__button--secondary">Login</button>
+        </div>
+    </form>
+</body>
+</html>
